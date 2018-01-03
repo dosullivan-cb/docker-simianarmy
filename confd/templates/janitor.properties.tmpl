@@ -81,13 +81,6 @@ simianarmy.janitor.edda.endpoint.us-east-1 = {{getv "/simianarmy/janitor/edda/en
 simianarmy.janitor.edda.endpoint.us-west-2 = {{getv "/simianarmy/janitor/edda/endpoint/uswest2" "http://localhost:8080"}}
 {{end -}}
 
-{{if exists "/simianarmy/volumeTagging/enabled" -}}
-simianarmy.volumeTagging.enabled = {{getv "/simianarmy/volumetagging/enabled" "true"}}
-{{end -}}
-
-{{if exists "/simianarmy/volumeTagging/enabled" -}}
-simianarmy.volumeTagging.leashed = {{getv "/simianarmy/volumetagging/leashed" "true"}}
-{{end -}}
 
 {{if exists "/simianarmy/janitor/edda/client/timeout" -}}
 simianarmy.janitor.edda.client.timeout = {{getv "/simianarmy/janitor/edda/client/timeout" "30000"}}
